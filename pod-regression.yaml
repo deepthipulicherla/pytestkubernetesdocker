@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+spec:
+  containers:
+    - name: regression-runner
+      image: depul/pytest-runner:latest
+      command: ['cat']
+      tty: true
